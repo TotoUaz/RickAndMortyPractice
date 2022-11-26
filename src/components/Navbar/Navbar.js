@@ -3,22 +3,22 @@ import './Navbar.css';
 function Navbar() {
     return (
         <div>
-            <div class="nav">
-                <div class="nav-header">
-                    <div class="nav-title">
+            <div className="nav">
+                <div className="nav-header">
+                    <div className="nav-title">
                         Rick And Morty
                     </div>
                 </div>
-                <div class="nav-btn">
-                    <label for="nav-check">
+                <div className="nav-btn">
+                    <label htmlFor="nav-check">
                         <span></span>
                         <span></span>
                         <span></span>
                     </label>
                 </div>
 
-                <div class="nav-links">
-                    <a href="//github.io/jo_geek" target="_blank">By Toto</a>
+                <div className="nav-links">
+                    <a href="//github.io/jo_geek" target="#">By Toto</a>
                 </div>
             </div>
         </div>
