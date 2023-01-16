@@ -23,9 +23,9 @@
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
+    border-style: solid;
+    border-color: #42caff;
     transform: translateY(-50%);
-    background: #42caff;
-    background: linear-gradient(to bottom, #42caff 0%, #e81aff 100%);
     position: relative;
     transition: all .3s ease-in-out;
    }
@@ -41,17 +41,11 @@
     transform: translate(-50%, -50%);
     border: 1rem solid #e8e8e8;
    }
-   
-   /*Text*/
-   .text-title {
-    text-transform: uppercase;
-    font-size: 0.75em;
-    color: #42caff;
-    letter-spacing: 0.05rem;
-   }
+
    
    .text-body {
-    font-size: .8em;
+    margin-top: -10%;
+    font-size: 1em;
     text-align: left;
     color: #6f6d78;
     font-weight: 400;

@@ -2,8 +2,28 @@
     margin-top: 50px;
     padding: 25px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 60px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
 }
 
+/* @media (min-width: 1024px) {
+    .wrapper{
+        margin-top: 50px;
+        padding: 25px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 60px;
+        grid-auto-rows: minmax(100px, auto); 
+    }
+}
+
+@media (width: 480px) {
+    .wrapper{
+        margin-top: 50px;
+        padding: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        grid-auto-rows: minmax(100px, auto); 
+    }
+} */

@@ -21,12 +21,13 @@ export default function Character({
     return (
         <div class="card">
             <div >
-                <img class="card-img" src={image} alt="imagen" />
+                <img class="card-img"
+                    style={{ borderColor: status === 'Alive' ? 'green' : status === 'Dead' ? 'red' : '#42caff' }}
+                    src={image} alt="imagen" />
             </div>
             <div class="card-info">
                 <p class="text-body">{name}, {type},  {gender}<br />   Status: {status} <br />
                     Species: {species}.<br /> Location of origin:{origin.name},<br /> Last known location:{location.name} </p>
-                <p class="text-title">{status}</p>
             </div>
         </div>
 
