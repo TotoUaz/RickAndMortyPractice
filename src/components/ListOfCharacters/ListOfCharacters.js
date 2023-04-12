@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Character from '../Character/Character';
-import './Card.css';
-function Card() {
+import './ListOfCharacters.css';
+function ListOfCharacters() {
     const [characters, setCharacters] = useState([]);
     const [error, setError] = useState(null);
 
@@ -37,5 +37,5 @@ function Card() {
     );
 }
 
-export default Card;
+export default ListOfCharacters;
 

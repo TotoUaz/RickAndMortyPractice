@@ -34,13 +34,3 @@ export default function Character({
 
     );
 }
-
-
-// id={id}
-// name={name}
-// status={status}
-// species={species}
-// type={type}
-// gender={gender}
-// image={image}
-// url={url}

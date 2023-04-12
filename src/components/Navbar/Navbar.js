@@ -9,17 +9,14 @@ function Navbar() {
                         Rick And Morty
                     </div>
                 </div>
-                <div className="nav-btn">
-                    <label htmlFor="nav-check">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                </div>
+                <a className='creator' href="https://github.com/TotoUaz">By Toto</a>
 
                 <div className="nav-links">
-                    <a href="//github.io/jo_geek" target="#">By Toto</a>
+                    <a href="#" >Characters</a>
+                    <a href="#" >Episodes</a>
+                    <a href="#" >Locations</a>
                 </div>
+                <button className='burger-menu'>Press me</button>
             </div>
         </div>
     );
