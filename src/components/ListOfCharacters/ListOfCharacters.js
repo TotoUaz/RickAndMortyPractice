@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Character from '../Character/Character';
-import './ListOfCharacters.css';
+import './ListOfCharacters.css'
+
 function ListOfCharacters() {
     const [characters, setCharacters] = useState([]);
     const [error, setError] = useState(null);

@@ -1,12 +1,15 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Card from './components/ListOfCharacters/ListOfCharacters';
+import ListOfCharacters from './components/ListOfCharacters/ListOfCharacters';
+import ListOfEpisodes from './components/ListOfEpisodes/ListOfEpisodes';
 
 function App() {
   return (
     <div className='container'>
       <Navbar />
-      <Card />
+      {/* <ListOfCharacters /> */}
+      <ListOfEpisodes />
+
     </div>
   );
 }
