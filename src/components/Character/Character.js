@@ -19,14 +19,14 @@ export default function Character({
     url = ""
 }) {
     return (
-        <div class="card">
+        <div className="card">
             <div >
-                <img class="card-img"
+                <img className="card-img"
                     style={{ borderColor: status === 'Alive' ? 'green' : status === 'Dead' ? 'red' : '#42caff' }}
                     src={image} alt="imagen" />
             </div>
-            <div class="card-info">
-                <p class="text-body">{name}, {type},  {gender}<br />   Status: {status} <br />
+            <div className="card-info">
+                <p className="text-body">{name}, {type},  {gender}<br />   Status: {status} <br />
                     Species: {species}.<br /> Location of origin:{origin.name},<br /> Last known location:{location.name} </p>
             </div>
         </div>

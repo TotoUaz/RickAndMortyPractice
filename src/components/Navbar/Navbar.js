@@ -1,6 +1,14 @@
+import ListOfCharacters from '../ListOfCharacters/ListOfCharacters';
+import ListOfEpisodes from '../ListOfEpisodes/ListOfEpisodes';
 import './Navbar.css';
+import {
+    Routes,
+    Route,
+    Link
+} from 'react-router-dom';
 
 function Navbar() {
+
     return (
         <div>
             <div className="nav">
@@ -12,12 +20,16 @@ function Navbar() {
                 <a className='creator' href="https://github.com/TotoUaz">By Toto</a>
 
                 <div className="nav-links">
-                    <a href="#" >Characters</a>
-                    <a href="#" >Episodes</a>
-                    <a href="#" >Locations</a>
+                    <Link to="/Characters">Characters</Link>
+                    <Link to="/Episodes" >Episodes</Link>
+                    <Link to="/Locations" >Locations</Link>
                 </div>
-                <button className='burger-menu'>Press me</button>
             </div>
+            <Routes>
+                <Route exact path='/Characters' element={< ListOfCharacters />}></Route>
+                <Route exact path='/Episodes' element={< ListOfEpisodes />}></Route>
+                {/* <Route exact path='/Locations' element={< Contact />}></Route> */}
+            </Routes>
         </div>
     );
 }

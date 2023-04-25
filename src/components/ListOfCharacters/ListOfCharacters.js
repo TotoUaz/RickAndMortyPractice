@@ -16,10 +16,10 @@ function ListOfCharacters() {
             .catch(setError);
     }, []);
 
-    if (error) return <p>An error occurred</p>
+    if (error) return <p className='error' >An error occurred! </p>
     return (
 
-        <div className='wrapper'>
+        <div className='wrapper1'>
             {characters.map(({ id, name, status, species, type, gender, image, location, origin }) => (
                 < Character
                     key={id}
@@ -31,7 +31,6 @@ function ListOfCharacters() {
                     image={image}
                     location={location}
                     origin={origin}
-                    className="item-card"
                 />
             ))}
         </div>
