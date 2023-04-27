@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import ListOfCharacters from '../ListOfCharacters/ListOfCharacters';
 import ListOfEpisodes from '../ListOfEpisodes/ListOfEpisodes';
 import './Navbar.css';
@@ -9,6 +10,14 @@ import {
 
 function Navbar() {
 
+    const [responsive, setResponsive] = useState("nav-links");
+
+    const update = () => {
+        responsive === 'nav-links' ?
+            setResponsive('nav-links responsive') :
+            setResponsive('nav-links');
+    };
+
     return (
         <div>
             <div className="nav">
@@ -19,14 +28,15 @@ function Navbar() {
                 </div>
                 <a className='creator' href="https://github.com/TotoUaz">By Toto</a>
 
-                <div className="nav-links">
-                    <Link to="/Characters">Characters</Link>
-                    <Link to="/Episodes" >Episodes</Link>
-                    <Link to="/Locations" >Locations</Link>
+                <div className={responsive}>
+                    <Link to="/">Characters</Link>
+                    <Link to="/Episodes">Episodes</Link>
+                    <Link to="/Locations">Locations</Link>
+                    <a className='icon' onClick={update}>Menu</a>
                 </div>
             </div>
             <Routes>
-                <Route exact path='/Characters' element={< ListOfCharacters />}></Route>
+                <Route exact path='/' element={< ListOfCharacters />}></Route>
                 <Route exact path='/Episodes' element={< ListOfEpisodes />}></Route>
                 {/* <Route exact path='/Locations' element={< Contact />}></Route> */}
             </Routes>

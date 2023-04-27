@@ -22,7 +22,7 @@ export default function Character({
         <div className="card">
             <div >
                 <img className="card-img"
-                    style={{ borderColor: status === 'Alive' ? 'green' : status === 'Dead' ? 'red' : '#42caff' }}
+                    style={{ borderColor: status === 'Alive' ? '#689775' : status === 'Dead' ? '#a33327' : '#917164' }}
                     src={image} alt="imagen" />
             </div>
             <div className="card-info">

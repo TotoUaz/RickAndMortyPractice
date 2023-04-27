@@ -11,7 +11,7 @@ body {
 .nav {
   height: 50px;
   width: 100%;
-  background-color: #4d4d4d;
+  background-color: #689775;
   position: relative;
 }
 
@@ -27,7 +27,8 @@ body {
 .creator:hover {
   text-decoration: none;
   padding: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #c7493a;
+  border-radius: 6px;
 }
 
 .nav > .nav-header > .nav-title {
@@ -37,10 +38,6 @@ body {
   padding: 10px 10px 10px 10px;
 }
 
-.nav > .nav-btn {
-  display: none;
-}
-
 .nav > .nav-links {
   display: inline;
   float: center;
@@ -48,67 +45,48 @@ body {
   margin-left: 350px;
 }
 
+.icon {
+  display: none;
+}
+
 .nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 13px 10px 11px 10px;
   text-decoration: none;
   color: #efefef;
+  border-radius: 5px;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #a33327;
 }
 
 .nav > #nav-check {
   display: none;
 }
 
-@media (max-width: 600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
+@media (max-width: 900px) {
+  .nav-links a {
+    display: none;
   }
+  .nav-links a.icon {
+    float: right;
+    display: block;
+  }
+}
 
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
+@media screen and (max-width: 900px) {
+  .nav-links.responsive {
+    position: relative;
   }
-  .nav > .nav-btn > label:hover,
-  .nav #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(19, 1, 1, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
+  .nav-links.responsive a.icon {
     position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-links.responsive a {
+    float: none;
     display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-  }
-
-  .burger-menu {
-    visibility: visible;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
+    text-align: center;
+    border-radius: 180px;
   }
 }
