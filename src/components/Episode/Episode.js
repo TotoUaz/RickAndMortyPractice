@@ -20,10 +20,9 @@ export default function Episode(
                 <p> Fecha en que salio al aire: {air_date} </p>
                 <p> Episodio: {episode} </p>
                 <p> Fecha de creacion en la BD: {created} </p>
+                <p>{url}</p>
             </div>
         </div>
-
-
     );
 }
 

@@ -24,7 +24,7 @@ function ListOfEpisodes() {
     return (
 
         <div className='wrapper'>
-            {episodes.map(({ id, name, air_date, episode, characters, url, created, }) => (
+            {episodes.map(({ id, name, air_date, episode, characters, url, created }) => (
                 < Episode
                     key={id}
                     id={id}

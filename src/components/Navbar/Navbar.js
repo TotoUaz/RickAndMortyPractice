@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ListOfCharacters from '../ListOfCharacters/ListOfCharacters';
 import ListOfEpisodes from '../ListOfEpisodes/ListOfEpisodes';
+import ListOfLocations from '../ListOfLocations/ListOfLocations'
 import './Navbar.css';
 import {
     Routes,
@@ -38,7 +39,7 @@ function Navbar() {
             <Routes>
                 <Route exact path='/' element={< ListOfCharacters />}></Route>
                 <Route exact path='/Episodes' element={< ListOfEpisodes />}></Route>
-                {/* <Route exact path='/Locations' element={< Contact />}></Route> */}
+                <Route exact path='/Locations' element={< ListOfLocations />}></Route>
             </Routes>
         </div>
     );
