@@ -1,15 +1,18 @@
+import { useState } from 'react';
 import './Pagination.css';
 
-export default function Pagination() {
+export default function Pagination({ page, nextPage, prevPage }) {
+
+    const [pagina, setPagina] = useState({});
+
+
 
     return (
         <div>
             <ul className="pagination">
-                <li><a href="#0">&lt;</a></li>
-                <li><a className="active" href="#0">1</a></li>
-                <li><a href="#0">2</a></li>
-                <li><a href="#0">3</a></li>
-                <li><a href="#0">&gt;</a></li>
+                <li><a onClick={prevPage} >&lt;</a></li>
+                <li><a>{page}</a></li>
+                <li><a onClick={nextPage}>&gt;</a></li>
             </ul>
         </div>
     );
