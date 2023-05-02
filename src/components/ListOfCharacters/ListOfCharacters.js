@@ -8,7 +8,7 @@ function ListOfCharacters() {
     const [characters, setCharacters] = useState([]);
     const [error, setError] = useState(null);
     const [info, setInfo] = useState({});
-    const [page, setPage] = useState(1);
+    const [page, setPage] = useState(41);
     useEffect(() => {
         axios("https://rickandmortyapi.com/api/character?page=" + page)
             .then((response) => {
@@ -50,7 +50,7 @@ function ListOfCharacters() {
                     />
                 ))}
             </div>
-            <Pagination page={page} nextPage={nextPage} prevPage={prevPage} />
+            <Pagination page={page} nextPage={nextPage} prevPage={prevPage} pageNum={info.pages} />
         </div>
     );
 }
