@@ -1,4 +1,5 @@
 import './Episode.css';
+import ListOfCharacterForEpisode from './ListOfCharactersForEpisode';
 export default function Episode(
     {
         id = 1,
@@ -20,6 +21,7 @@ export default function Episode(
                 <p> Fecha en que salio al aire: {air_date} </p>
                 <p> Episodio: {episode} </p>
                 <p> Fecha de creacion en la BD: {created} </p>
+                <ListOfCharacterForEpisode characters={characters} />
                 <p>{url}</p>
             </div>
         </div>
