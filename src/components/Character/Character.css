@@ -8,6 +8,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  border-radius: 20px;
 }
 
 .card-info {
@@ -23,8 +25,6 @@
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
-  border-style: solid;
-  border-color: #42caff;
   transform: translateY(-50%);
   position: relative;
   transition: all 0.3s ease-in-out;

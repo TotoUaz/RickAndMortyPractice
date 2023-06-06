@@ -11,7 +11,12 @@ body {
 .nav {
   height: 50px;
   width: 100%;
-  background-color: #689775;
+  background-image: linear-gradient(
+    90deg,
+    #fc4444 7%,
+    #3feee7 50%,
+    #55bdca 100%
+  );
   position: relative;
 }
 
@@ -22,19 +27,19 @@ body {
 .creator {
   text-decoration: none;
   padding: 2px;
-  color: white;
+  color: #131212;
 }
 .creator:hover {
   text-decoration: none;
   padding: 2px;
-  background-color: #c7493a;
+  background-color: #cafafe;
   border-radius: 6px;
 }
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #fff;
+  color: #131212;
   padding: 10px 10px 10px 10px;
 }
 
@@ -52,12 +57,12 @@ body {
 .nav > .nav-links > a {
   padding: 13px 10px 11px 10px;
   text-decoration: none;
-  color: #efefef;
+  color: #131212;
   border-radius: 5px;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: #a33327;
+  background-color: #cafafe;
 }
 
 .nav > #nav-check {
