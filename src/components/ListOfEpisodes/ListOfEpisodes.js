@@ -12,7 +12,7 @@ function ListOfEpisodes() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios("https://rickandmortyapi.com/api/episode")
+        axios("https://rickandmortyapi.com/api/episode?page=1")
             .then((response) => {
                 setEpisodes(response.data.results);
                 setError(null);

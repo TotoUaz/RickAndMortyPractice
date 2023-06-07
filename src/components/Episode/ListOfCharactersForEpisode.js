@@ -1,22 +1,34 @@
+import { useEffect, useState } from "react";
+import Character from "../Character/Character";
+import axios from "axios";
 function ListOfCharacterForEpisode({ characters }) {
 
-    //Have to check how I am going to manage it, because
-    //I have a list of urls each for a single character,
-    //So I will have to make a call for every single one of 
-    // the characters, maybe what I can do is use this class
-    // as the list, or grid, this component will only organize
-    //the images with its names, and I can maybe create a new
-    //component where it will make the call to the api
-    // format the image and return the value. I can 
-    // use several of those components to create the list.
+    const [charFromEpisode, setCharFromEpisode] = useState([]);
+
+    useEffect(() => {
+        console.log(characters.length)
+        console.log(characters);
+
+    }, []);
 
     return (
         <div>
             Hola aqui van los characters images pasados
             al nuevo componente.
-            <p>{characters}</p>
+            {/* {characters.map(({ id, name, status, species, type, gender, image, location, origin }) => (
+                < Character
+                    key={id}
+                    name={name}
+                    status={status}
+                    species={species}
+                    type={type}
+                    gender={gender}
+                    image={image}
+                    location={location}
+                    origin={origin}
+                />
+            ))} */}
         </div>
-
     );
 }
 export default ListOfCharacterForEpisode;

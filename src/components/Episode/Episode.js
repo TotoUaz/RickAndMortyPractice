@@ -18,11 +18,8 @@ export default function Episode(
 
             <h1>{name}</h1>
             <div className='detalles'>
-                <p> Fecha en que salio al aire: {air_date} </p>
                 <p> Episodio: {episode} </p>
-                <p> Fecha de creacion en la BD: {created} </p>
-                <ListOfCharacterForEpisode characters={characters} />
-                <p>{url}</p>
+                <p> Fecha en que salio al aire: {air_date} </p>
             </div>
         </div>
     );
