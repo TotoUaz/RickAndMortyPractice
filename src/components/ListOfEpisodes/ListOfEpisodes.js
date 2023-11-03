@@ -22,7 +22,8 @@ function ListOfEpisodes() {
 
     if (error) return <p>An error occurred</p>
     return (
-
+        //Found out how to add a link to each episode, that will redirect into 
+        // a dinamic page that will load the info and characters of the episodes
         <div className='wrapper'>
             {episodes.map(({ id, name, air_date, episode, characters, url, created }) => (
                 < Episode
